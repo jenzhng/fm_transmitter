@@ -26,7 +26,9 @@ sox star_wars.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f 100.6 
 ```
 sudo apt-get install sox
 ```
+```
 sudo apt-get install sox libsox-fmt-mp3
+```
 ```
 sox my-audio.mp3 -r 22050 -c 1 -b 16 -t wav my-converted-audio.wav
 ```
