@@ -22,7 +22,7 @@ You can open WAVE files or read audio data from stdin, i.e.:
 ```
 sox star_wars.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f 100.6 -
 ```
-#### Instructions to convert to compatible file
+#### Instructions to convert mp3 to compatible wave file
 ```
 sudo apt-get install sox
 ```
