@@ -22,6 +22,14 @@ You can open WAVE files or read audio data from stdin, i.e.:
 ```
 sox star_wars.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f 100.6 -
 ```
+#### Instructions to convert to compatible file
+```
+sudo apt-get install sox
+```
+sudo apt-get install sox libsox-fmt-mp3
+```
+sox my-audio.mp3 -r 22050 -c 1 -b 16 -t wav my-converted-audio.wav
+```
 
 ### USB sound-card
 To use a USB sound-card type this:
@@ -32,6 +40,8 @@ Some devices have problems with the one up (there is a warning in the terminal l
 ```
 arecord -D plughw:1,0 -c1 -d 0 -r 22050 -f S16_LE | sudo ./fm_transmitter -f 100.6 -
 ```
+
+
 
 ## Law
 Please keep in mind that transmitting on certain frequencies without special permissions may be illegal in your country.
